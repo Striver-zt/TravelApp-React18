@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false, //不需要手动显式声明any类型
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, //允许混合编译js代码文件
+    "skipLibCheck": true,
+    "esModuleInterop": true, //允许使用commonJS方式import 默认文件
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true, //编译器会将每个文件当做单独模块使用
+    "noEmit": true, // 当发生错误的时候编译器不要生产js代码
+    "jsx": "react-jsx", //允许编译器编译react代码
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+  },
+  "extends": "./path.tsconfig.json", //引入
+  "include": [ // 包含需要编译的文件
+    "src"
+  ],
+}
