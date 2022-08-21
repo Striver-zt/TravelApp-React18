@@ -12,6 +12,9 @@ import sideImage6 from './assets/images/icon-720944_640.png'
 import sideImage7 from './assets/images/microsoft-80658_640.png'
 function App() {
   // const { Header, Footer, Sider, Content } = Layout;
+  useEffect( () => {
+    console.log( 'useEffect' );
+  }, [] )
   return (
     <div className={ styles.App }>
       <Header />
