@@ -13,7 +13,7 @@ import sideImage7 from './assets/images/microsoft-80658_640.png'
 function App() {
   // const { Header, Footer, Sider, Content } = Layout;
   useEffect( () => {
-    console.log( 'useEffect' );
+    console.log( 'useEffect', 12345 );
   }, [] )
   return (
     <div className={ styles.App }>
